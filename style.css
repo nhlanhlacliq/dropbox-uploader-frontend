@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-size:104%;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+/* Top Half of page*/
+.container {
+    height: 100vh;
+}
+.container img {
+    width: 100%;
+    position: absolute;
+    height: 108vh;
+    object-fit: cover;
+    z-index: -1;
+    overflow:hidden;
+}
+
+/* Titles */
+/* Dropbox Brand Colors : #007ee5; #7b8994; #47525d; #3d464d; */
+.main-title {
+    position: fixed;
+    width: 75%;
+    top: 30%;
+    left: 50%;
+    font-size: 7rem;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    line-height: 75%;
+    color: white;
+    text-shadow: 1px 1px 10px #3d464d;
+}
+.second-title {
+    position: fixed;
+    width: 75%;
+    top: 30%;
+    left: 50%;
+    font-size: 7rem;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    line-height: 75%;
+    mix-blend-mode:difference;
+    text-shadow: 1px 1px 7px #3d464d;
+}
+
+/* Lower Half of page */
+.content {
+    width: 100%;
+    background: url("./Images/keypad.png") no-repeat center center;
+    background-size: 100%;
+    min-height: 108vh;
+    z-index: 2;
+    position:absolute;
+    text-align: center;
+    clip: rect(0, auto, auto, 0);
+}
+.content-images{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+    padding: 2%;
+    transform: translate(0, 15%);
+}
+.text-header{
+    margin: -20px 0;
+    padding: 2rem 19rem;
+    font-size: 1.6rem;
+    color: #000;
+}
+.text{
+    margin: -20px 0;
+    padding: 2rem 19rem;
+    font-size: 1.1rem;
+    color: #000;
+}
+.text a{
+    text-decoration:none;
+    font-size: 1.1rem;
+    color: #7b8994;
+}
+.text a:hover{
+    color: #007ee5;
+
+}
+
+
+/* Download button */
+input[type="button"] {
+    border: 1px solid #5d7f98;
+    border-radius: 12px;
+    background-color: transparent;
+    color: #5d7f98;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline: none;
+    transition: transform 80ms ease-in;
+}
+input[type="button"]:active {
+    transform: scale(0.95);
+}
+input[type="button"]:hover {
+    color: #007ee5;
+    border: 1px solid#007ee5;
+}
