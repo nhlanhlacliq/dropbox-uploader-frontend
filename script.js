@@ -15,6 +15,7 @@ timeline
     .to('.cloud-mask', 3, {y: 0, x: 0}, '-=3')
     .to('.content', 3, {top:'0%'}, '-=3')
     .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1')
+    .fromTo(".text-header", { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1.5')
     .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
 
 // Scroll trigger
